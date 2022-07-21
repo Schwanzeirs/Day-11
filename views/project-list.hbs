@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Project List</title>
+</head>
+
+<body style="background-color: honeydew;">
+
+    <nav>
+        <div class="left-side">
+            <a href="/">
+                <img src="/public/assets/logo.png" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="/">Home </a>
+                </li>
+                <li>
+                    <a href="/list">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="/contact">Contact Me</a>
+        </div>
+    </nav>
+
+    {{#if isLogin}}
+    <div>
+        <div class="btn-new-project">
+            <div class="new-btn">
+            <a href="/project" class="add-new-project">Add Project</a>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{#each project}}
+    <div class="card" id="contents" style="display: inline-flex;">
+        <div class="contents">
+            <h1>
+                <a href="/list/{{this.id}}" target="_blank">{{this.title}}</a>
+            </h1>
+            <img src="/public/assets/profil.jpeg" alt="" class="project-image">
+            <span class="text-post">1 hour ago</span>
+            <div>
+                {{this.createdAt}} | {{this.authorId}}
+            <br><br>
+            Project Start on "{{this.startDate}}"<br>
+            Project End on "{{this.endDate}}"<br>
+            </div>
+            <p class="project-description">
+                {{this.description}}
+            </p>
+            <a href="https://nodejs.org/en/"><img src="/public/assets/{{this.node}}.png" alt="" class="project-logo" /></a>
+            <a href="https://nextjs.org/"><img src="/public/assets/{{this.next}}.png" alt="" class="project-logo" /></a>
+            <a href="https://reactjs.org/"><img src="/public/assets/{{this.react}}.png" alt="" class="project-logo" /></a>
+            <a href="https://www.typescriptlang.org/"><img src="/public/assets/{{this.type}}.png" alt=""
+                    class="project-logo" /></a>
+            <div class="btn-group">
+                <a href="/edit-project/{{this.id}}" class="edit-button">Edit Project</a>
+                <a href="/delete-project/{{this.id}}" class="delete-button">Delete Project</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</body>
+
+</html>

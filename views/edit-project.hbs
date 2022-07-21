@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Create Project</title>
+</head>
+
+<body style="background-color: honeydew;">
+
+    <nav>
+        <div class="left-side">
+            <a href="/">
+                <img src="/public/assets/logo.png" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="/">Home </a>
+                </li>
+                <li>
+                    <a href="/list">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="/contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="add-project-bg">
+        <h1 class="add-project-title">ADD PROJECT</h1>
+        <div class="add-project-card">
+            <div class="project">
+                <div class="project-form">
+                    <form action="/edit-project/{{id}}" method="post">
+                        <div class="add-project-form">
+                            <label for="input-project-name">Project name</label><br>
+                            <input type="text" name="title" id="input-project-name" style="width: 100%;" value="{{data.title}}" />
+                            <input type="hidden" name="id" id="input-id" style="width: 100%;" value="{{data.id}}" />
+                        </div>
+
+                        <div class="add-project-form">
+                            <label for="input-start-date" style="margin-right: 240px;">Start Date</label>
+                            <label for="input-end-date">End Date</label>
+                        </div>
+
+                        <div class="add-project-form">
+                            <input type="date" name="startDate" id="input-start-date" value="{{data.startDate}}" />
+                            <input type="date" name="endDate" id="input-end-date" value="{{data.endDate}}" />
+                        </div>
+
+                        <div class="add-project-form">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" cols="30" rows="10" >{{data.description}}</textarea>
+                        </div>
+
+                        <div class="add-project-form">
+                            <label for="technologies">library</label><br>
+                            <input type="checkbox" id="node" name="node" value="nodejs" />
+                            <label for="node"> Node - JS</label>
+                            <input type="checkbox" id="next" name="next" value="nextjs" />
+                            <label for="next"> Next - JS</label><br>
+                            <input type="checkbox" id="react" name="react" value="reactsj" />
+                            <label for="react"> React - JS</label>
+                            <input type="checkbox" id="type" name="type" value="typescript" />
+                            <label for="type"> Typescript</label><br>
+                        </div>
+
+                        <div class="add-project-form">
+                            <label for="input-project-image">Upload Image</label><br>
+                            <input type="file" id="input-project-image">
+                        </div>
+
+                        <div class="button-group">
+                            <button class="add-project-button" type="submit">Add Project</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <h1 class="add-project-result">MY PROJECT</h1>
+    <div class="card" id="contents">
+        <!-- <div class="contents">
+            <h1>
+                <a href="project-detail.html" target="_blank">Vanitas Vanitatum et omnia Vanitas</a>
+            </h1>
+            <img src="assets/images/profil.jpeg" alt="" class="project-image">
+            <span class="text-post">1 hour ago</span>
+            <div>
+                07 Juli 2022 17:00 WIB | Black Suit
+            </div>
+            <p class="project-description">
+                Sefirot (/sfɪˈroʊt, ˈsfɪroʊt/; Hebrew: סְפִירוֹת səp̄īrōṯ), meaning emanations, are the
+                10
+                attributes/emanations in Kabbalah, through which Ein Sof (The Infinite) reveals itself
+                and
+                continuously
+                creates both the physical realm and the chain of higher metaphysical realms (Seder
+                hishtalshelus). The
+                term is alternatively transliterated into English as sephirot/sephiroth, singular
+                sefirah/sephirah, etc.
+            </p>
+            <img src="assets/images/nodejs.png" alt="" class="project-logo" />
+            <img src="assets/images/nextjs.png" alt="" class="project-logo" />
+            <img src="assets/images/reactsj.png" alt="" class="project-logo" />
+            <img src="assets/images/typescript.png" alt="" class="project-logo" />
+            <div class="btn-group">
+                <button class="btn-edit">Edit Project</button>
+                <button class="btn-delete">Delete Project</button>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>

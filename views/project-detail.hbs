@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/public/style.css">
+    <title>My Project</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="left-side">
+            <a href="/">
+                <img src="/public/assets/logo.png" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="/">Home </a>
+                </li>
+                <li>
+                    <a href="/list">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="/contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <h1 class="title">{{data.title}}</h1>
+    <p class="author">{{data.posted_at}} | {{data.author}}</p>
+    <div class="detail-up">
+        <div class="detail-project">
+            <div class="project-left">
+                <img src="/public/assets/profil.jpeg" alt="detail" width="60%" />
+                <div class="project-right">
+                    <div class="duration">
+                        <h3 style="margin-left: 50px;">Duration</h3>
+                        <p><img src="/public/assets/calendar.png" class="duration-style">{{data.startDate}} - {{data.endDate}}</p>
+                        <p><img src="/public/assets/clock.png" class="duration-style">1 month</p>
+                        <div class="project-description">
+                            <br>
+                            <h3 style="margin-left: 50px;">Technologies</h3>
+                            <div class="tech-up">
+                                <p><img src="/public/assets/{{data.react}}.png" class="technology-style">React JS</p>
+                                <p><img src="/public/assets/{{data.node}}.png" class="technology-style">Node JS</p>
+                            </div>
+                            <div class="tech-up">
+                                <p><img src="/public/assets/{{data.next}}.png" class="technology-style">Next JS</p>
+                                <p><img src="/public/assets/{{data.type}}.png" class="technology-style">Typescript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail-down">
+            <p id="project-description">
+                {{data.description}}
+            </p>
+        </div>
+</body>
+
+</html>

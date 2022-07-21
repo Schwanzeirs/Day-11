@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Login</title>
+    
+</head>
+
+<body>
+    
+    <nav>
+        <div class="left-side">
+            <a href="/">
+                <img src="/public/assets/logo.png" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="/login">Login</a>
+                </li>
+                <li>
+                    <a href="/register">Register</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="/contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <h1 class="contact-title">Login</h1>
+
+    <div class="contact-me">
+        <form action="/login" method="post" id="form-contact">
+
+            <div style="margin-bottom:20px ;">
+                <label for="email" style="font-size: 20px; font-weight: 700;">Email</label>
+                <input id="email" type="email" placeholder="enter your email">
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="password" style="font-size: 20px; font-weight: 700;">Password</label>
+                <input id="password" type="text" placeholder="enter your password">
+            </div>
+
+            <a href="/register" class="dont">Don't have account ?</a>
+
+            <br>
+
+            <button class="submit-contact" type="button" onclick="getData()">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

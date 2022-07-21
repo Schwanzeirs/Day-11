@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #f4f3f3;
+    height: 7vh;
+    display: flex;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav .left-side {
+    flex: 50%;
+    padding-left: 90px;
+}
+
+nav .right-side {
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: black;
+    font-weight: 700;
+}
+
+nav .right-side a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.personal {
+    height: 93vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-content {
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(79, 79, 79);
+}
+
+.container-content .left {
+    flex: 40%;
+}
+
+.container-content .right {
+    flex: 60%;
+}
+
+.contents{
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    align-items: center;
+    margin: 10px;
+   }
+
+.card{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 30%;
+}
+
+   .messere {
+    text-align: center;
+    font-weight: bold;
+    line-height: 10px;
+   }
+
+   .messere-img {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: auto;
+   }
+
+   .messere-box {
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 50);
+    width:600px;
+    margin-top: 80px;
+    border-radius: 10px;
+   }
+
+   .messere-contact {
+    letter-spacing: 15px;
+    text-align: center;
+   }
+   .messere-contact a {
+       text-decoration: none;
+   }
+
+   .messere-contact-button {
+    box-shadow: 0px 0px 5px rgba(50, 50, 50, 50);
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    padding: 6px 26px;
+    font-size: 16px;
+    font-family: Arial;
+    letter-spacing: 2mm;
+    cursor: pointer;
+   }
+
+   .messere-description {
+    font-size: larger;
+    margin-top: 5px;
+   }
+
+   .about-messere {
+    border: 1px solid white;
+    width:550px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   }
+   
+   .btn-group {
+    text-align: right;
+    padding: 10px;
+   }
+
+   .project-logo {
+       padding: 5px;
+       width: 45px;
+       display: inline-flex;
+   }
+
+   .project-image {
+    width: 98%; 
+    padding: 5px;
+    margin: auto;
+   }
+
+   .text-post {
+    font-size: 15px; 
+    color: grey;
+   }
+
+   .project-description {
+       padding: 5px;
+       text-align: justify;
+   }
+
+   #description {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: 5px;
+    resize: none;
+    height: 100px;
+   }
+
+   #contents {
+    margin: auto;
+    margin-left: 40px;
+   }
+
+   .detail-project {
+    width: 1350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+   }
+
+   .project-left {
+       display: flex;
+       flex: 70%;
+       padding: 50px;
+   }
+
+   .project-right {
+    align-items: center;
+    width: 550px;
+    padding: 50px;
+   }
+
+   .title {
+    text-align: center;
+    padding-top: 50px;
+   }
+
+   .author {
+    text-align: center;
+   }
+
+   .duration-style {
+       width: 25px;
+       margin-right: 20px;
+       margin-left: 50px;
+   }
+
+   .detail-down {
+       margin-left: 85px;
+       margin-right: 85px;
+   }
+
+   #project-description {
+       margin: auto;
+       text-align: justify;
+       padding: 50px;
+   }
+   
+   .technology-style {
+    display: inline-flex;
+    width: 25px;
+    margin-right: 20px;
+    margin-left: 50px;
+   }
+
+   .tech-up {
+       display: flex;
+   }
+
+   .contact-me {
+    width: 400px;
+    margin: auto;
+    margin-top: -20px;
+   }
+
+   #form-contact #name {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   #form-contact #email {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   #form-contact #phone {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   #form-contact #subject {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   #form-contact #message {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+    resize: none;
+    height: 100px;
+   }
+
+   .submit-contact {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    padding: 8px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+   }
+
+   .contact-title {
+    margin: auto;
+    text-align: center;
+    padding: 60px;
+   }
+
+   .add-project-title {
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+   }
+
+   .add-project-card {
+    margin: auto;
+    width: 650px;
+   }
+
+   .add-project-form {
+    padding: 10px
+   }
+
+   .button-group {
+    padding: 10px; 
+    margin-top: 10px;
+   }
+
+   .add-project-button {
+       background-color: black;
+       color: honeydew;
+       border: none;
+       padding: 10px;
+       border-radius: 10px;
+       cursor: pointer;
+   }
+
+   .add-project-form #input-project-name {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   .add-project-form #input-start-date {
+    width: 305px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   .add-project-form #input-end-date {
+    width: 305px; 
+    margin-left: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   .add-project-form #description {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   .add-project-result {
+    text-align: center;
+    margin-top: 80px;
+   }
+
+   .add-project-bg {
+    background-color: #c4c4c4;
+   }
+
+   .btn-new-project {
+    padding: 5px;
+    background-color: honeydew;
+    margin-right: 85px;
+    text-align: end;
+   }
+
+   .add-new-project{
+    text-align: end;
+    text-decoration: none;
+   }
+
+   .edit-button {
+       border: 1px solid black;
+       background-color: white;
+       border-radius: 5px;
+       text-decoration: none;
+   }
+
+   .delete-button {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+   }
+
+   .new-btn {
+       border: 1px solid black;
+       text-align: center;
+       width: 130px;
+       margin-left: 1295px;
+       border-radius: 10px;
+       color: red;
+       font-weight: 900;
+       font-size: large;
+       background-color: rgb(154, 102, 203);
+   }
+
+   #form-contact #password {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    margin-top: 5px;
+   }
+
+   .have {
+       text-decoration: none;
+       padding-left: 270px;
+   }
+
+   .dont {
+       text-decoration: none;
+       padding-left: 232px;
+   }

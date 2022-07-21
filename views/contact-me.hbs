@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Contact Me</title>
+    
+</head>
+
+<body>
+    
+    <nav>
+        <div class="left-side">
+            <a href="/">
+                <img src="/public/assets/logo.png" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="/">Home </a>
+                </li>
+                <li>
+                    <a href="/list">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="/contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <h1 class="contact-title">Get in touch</h1>
+
+    <div class="contact-me">
+        <form id="form-contact">
+            <div style=" margin-bottom:20px ;">
+                <label for="name" style="font-size: 20px; font-weight: 700;">Name</label>
+                <input id="name" type="text" required placeholder="input your name">
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="email" style="font-size: 20px; font-weight: 700;">Email</label>
+                <input id="email" type="email" placeholder="enter your email">
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="phone" style="font-size: 20px; font-weight: 700;">Phone Number</label>
+                <input id="phone" type="text" placeholder="enter your phone number">
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="subject" style="font-size: 20px; font-weight: 700;">Subject</label>
+                <select id="subject">
+                    <option value="" disabled selected hidden> Select your option</option>
+                    <option>Lets Talk</option>
+                    <option>Lets Collaboration</option>
+                    <option>Lets Create Project</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom:20px ;">
+                <label for="message" style="font-size: 20px; font-weight: 700;">Your Message</label>
+                <textarea id="message" cols="30" rows="10" placeholder="input your message"></textarea>
+            </div>
+
+            <button class="submit-contact" type="button" onclick="getData()">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
